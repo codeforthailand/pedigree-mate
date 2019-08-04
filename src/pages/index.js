@@ -5,6 +5,8 @@ import SEO from "../components/seo"
 import Papa from "papaparse"
 import findMates from "../findmate";
 
+import logo from "../images/logo.svg"
+
 const comparingLevels = [
   {
       label: 'level-1',
@@ -123,23 +125,6 @@ const IndexPage = () => {
             })
           }
         </ul>
-
-        {/* <li ng-repeat="sample in samples" class="sample">
-                    <div class="left">
-                        <div>{{sample.id}}</div>
-                    </div>
-                    <div class="right">
-                        <div class="desc">{{sample.mates.length}} Partners</div>
-                        <ul>
-                            <li ng-repeat="m in sample.mates"
-                                class="mate" title="Common Ancestors: {{m.commonAncestorStr}}"
-                            >
-                                {{m.id}}
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="clear"></div>
-                </li> */}
         </div>
       }
     </div>
@@ -151,7 +136,7 @@ const IndexPage = () => {
       width: "100%",
       left: 0,
     }}>
-      <img src="/logo.svg" width="100px"/>
+      <img src={logo} width="100px"/>
     </div>
   </Layout>
 }
