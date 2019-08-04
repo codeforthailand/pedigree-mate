@@ -1,6 +1,7 @@
 module.exports = {
+  pathPrefix: `/pedigree-mating`,
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Pedigree Mating`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
@@ -20,7 +21,7 @@ module.exports = {
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
-        start_url: `/pedigree-mating`,
+        start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
