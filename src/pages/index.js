@@ -63,7 +63,7 @@ const IndexPage = () => {
       <br/>
     </div>
     <div style={{ position: "relative", zIndex: 1000 }}>
-      <span>
+      <span style={{fontWeight: "bold"}}>
         Animal-ID (♂) Mating Partners (♀) with <select 
           onChange={(e) => {
             const i = parseInt(e.target.value)
