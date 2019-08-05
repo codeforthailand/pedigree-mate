@@ -37,7 +37,6 @@ const IndexPage = () => {
       const content = lines.slice(1)
 
       const txt = [header, ...content].join("\n")
-      console.log(txt)
 
       Papa.parse(txt, {
         header: true,

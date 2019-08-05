@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import {withPrefix} from 'gatsby'
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -32,7 +33,10 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <div style={{marginTop: "5px", marginBottom: "10px"}}>คู่มือการใช้งาน</div>
+        <div style={{marginTop: "5px", marginBottom: "10px"}}>
+          <span style={{marginRight: `10px`}}>คู่มือการใช้งาน</span>
+          <span><a href={withPrefix(`/pedigree-test.csv`)}>ไฟล์ตัวอย่าง</a></span>
+        </div>
         <main>{children}</main>
         <footer style={{marginTop: "10px"}}>
           © {new Date().getFullYear() + 543}, 
