@@ -10,15 +10,15 @@ import logo from "../images/logo.svg"
 const comparingLevels = [
   {
       label: 'level-1',
-      ancestorKeys: ['c1', 's1']
+      ancestorKeys: ['d11', 's11']
   },
   {
       label: 'level-1,2',
-      ancestorKeys: ['c1', 's1', 'c2', 's2', 'c3', 's3']
+      ancestorKeys: ['d11', 's11', 'd21', 's21', 'd22', 's22']
   },
   {
       label: 'level-1,2,3',
-      ancestorKeys: ['c1', 's1', 'c2', 's2', 'c3', 's3', 'c4', 's4', 'c5', 's5', 'c6', 's6', 'c7', 's7']
+      ancestorKeys: ['d11', 's11', 'd21', 's21', 'd22', 's22', 'd31', 's31', 'd32', 's32', 'd33', 's33', 'd34', 's34']
   }
 ]
 
