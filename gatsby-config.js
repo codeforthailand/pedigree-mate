@@ -1,9 +1,9 @@
 module.exports = {
   pathPrefix: `/pedigree-mate`,
   siteMetadata: {
-    title: `Pedigree Mating`,
+    title: `Pedigree Mate`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `Pattarawat & Theerachai Chormai`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
