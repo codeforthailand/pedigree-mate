@@ -7,10 +7,12 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 import {withPrefix} from 'gatsby'
 import "./layout.css"
+
+import logo from "../images/logo.svg"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -31,17 +33,38 @@ const Layout = ({ children }) => {
           maxWidth: "90%",
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
+          marginTop: "3vh",
         }}
       >
-        <div style={{marginTop: "5px", marginBottom: "10px"}}>
-          <span style={{marginRight: `10px`}}>คู่มือการใช้งาน</span>
-          <span><a href={withPrefix(`/pedigree-test.csv`)}>ไฟล์ตัวอย่าง</a></span>
+        <div>
+          <h1 style={{textTransform: "uppercase", float: "left"}}>
+            <img 
+              style={{
+                verticalAlign: "middle",
+                height: "3rem",
+                margin: 0,
+                border: "2px solid black",
+                marginRight: "6px",
+                marginTop: "-0.3rem",
+              }}
+              src={logo}
+            />
+            Pedigree Mating
+          </h1>
+          <div style={{float: "right", fontWeight: "bold", marginTop: "1rem"}}>
+            <span style={{marginRight: `10px`}}>
+              <Link to="/manual">Manual</Link>
+            </span>
+            <span><a href={withPrefix(`/pedigree-test.csv`)}>Sample CSV File</a></span>
+          </div>
+          <div style={{clear: "both"}}></div>
         </div>
-        <main>{children}</main>
-        <footer style={{marginTop: "10px"}}>
-          © {new Date().getFullYear() + 543}, 
-          {` `}
-          <a href="https://www.gatsbyjs.org">รหัสต้นฉบับ</a>
+        <main style={{minHeight: "70vh", marginTop: "20px"}}>
+          {children}
+        </main>
+        <footer style={{marginTop: "20px", textAlign: "center"}}>
+          © {new Date().getFullYear() + 543} CodeForThailand,
+          Developed by <a href="http://pat.chormai.org">Pattarawat</a> & <a href="https://th-th.facebook.com/PoultryResearchAndDevelopmentCenter/">Theerachai Chormai</a>
         </footer>
       </div>
     </>

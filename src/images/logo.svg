@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="401px" height="233px" viewBox="0 0 401 233" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="250px" height="250px" viewBox="0 0 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
     <title>logo</title>
     <desc>Created with Sketch.</desc>
     <g id="logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect fill="#FFFFFF" x="0" y="0" width="401" height="233"></rect>
-        <polygon id="Path-Copy-2" fill="#2A2A2A" points="199.437101 196 230.898931 166 240 174.704985 199.437101 214 159 174.704985 168.976824 165"></polygon>
-        <polygon id="Path-Copy-5" fill="#2A2A2A" opacity="0.628836496" points="294.437101 100 325.898931 70 335 78.704985 294.437101 118 254 78.704985 263.976824 69"></polygon>
-        <polygon id="Path-Copy-8" fill="#2A2A2A" opacity="0.628836496" points="104.437101 101 135.898931 71 145 79.704985 104.437101 119 64 79.704985 73.9768245 70"></polygon>
-        <polygon id="Path-Copy-3" fill="#2A2A2A" opacity="0.88109189" points="246.437101 148 277.898931 118 287 126.704985 246.437101 166 206 126.704985 215.976824 117"></polygon>
-        <polygon id="Path-Copy-6" fill="#2A2A2A" opacity="0.362258185" points="341.437101 52 372.898931 22 382 30.704985 341.437101 70 301 30.704985 310.976824 21"></polygon>
-        <polygon id="Path-Copy-9" fill="#2A2A2A" opacity="0.362258185" points="151.437101 53 182.898931 23 192 31.704985 151.437101 71 111 31.704985 120.976824 22"></polygon>
-        <polygon id="Path-Copy-11" fill="#2A2A2A" opacity="0.628836496" points="199.437101 100 230.898931 70 240 78.704985 199.437101 118 159 78.704985 168.976824 69"></polygon>
-        <polygon id="Path-Copy-4" fill="#2A2A2A" opacity="0.88109189" points="151.437101 149 182.898931 119 192 127.704985 151.437101 167 111 127.704985 120.976824 118"></polygon>
-        <polygon id="Path-Copy-7" fill="#2A2A2A" opacity="0.362258185" points="246.437101 53 277.898931 23 287 31.704985 246.437101 71 206 31.704985 215.976824 22"></polygon>
-        <polygon id="Path-Copy-10" fill="#2A2A2A" opacity="0.362258185" points="56.4371012 54 87.8989309 24 97 32.704985 56.4371012 72 16 32.704985 25.9768245 23"></polygon>
+        <rect fill="#FFFFFF" x="0" y="0" width="250" height="250"></rect>
+        <g id="Group" transform="translate(25.000000, 72.000000)" fill="#2A2A2A">
+            <polygon id="Path-Copy-2" points="99.9534083 93.7755102 123.258467 71.7346939 130 78.1301931 99.9534083 107 70 78.1301931 77.3902403 71"></polygon>
+            <polygon id="Path-Copy-5" opacity="0.628836496" points="169.953408 22.7755102 193.258467 0.734693878 200 7.13019305 169.953408 36 140 7.13019305 147.39024 -3.19744231e-14"></polygon>
+            <polygon id="Path-Copy-8" opacity="0.628836496" points="29.9534083 23.7755102 53.2584673 1.73469388 60 8.13019305 29.9534083 37 -1.59872116e-13 8.13019305 7.39024035 1"></polygon>
+            <polygon id="Path-Copy-3" opacity="0.88109189" points="134.953408 58.7755102 158.258467 36.7346939 165 43.1301931 134.953408 72 105 43.1301931 112.39024 36"></polygon>
+            <polygon id="Path-Copy-11" opacity="0.628836496" points="99.9534083 22.7755102 123.258467 0.734693878 130 7.13019305 99.9534083 36 70 7.13019305 77.3902403 -3.19744231e-14"></polygon>
+            <polygon id="Path-Copy-4" opacity="0.88109189" points="64.9534083 58.7755102 88.2584673 36.7346939 95 43.1301931 64.9534083 72 35 43.1301931 42.3902403 36"></polygon>
+        </g>
     </g>
 </svg>
