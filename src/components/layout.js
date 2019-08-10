@@ -49,7 +49,7 @@ const Layout = ({ children }) => {
               }}
               src={logo}
             />
-            Pedigree Mating
+            {data.site.siteMetadata.title}
           </h1>
           <div style={{float: "right", fontWeight: "bold", marginTop: "1rem"}}>
             <span style={{marginRight: `10px`}}>
