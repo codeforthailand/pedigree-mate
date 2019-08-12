@@ -1,8 +1,14 @@
 const VARIABLES = {
-    female: 'Female',
-    male: 'Male',
     na: 'X',
 }
+
+const compareSex = (x, candidates=[]) => {
+    const xl = x.toLowerCase()
+    return candidates.reduce((acc, curr) => acc || (xl === curr), false)
+}
+
+const isFemale = (x) => compareSex(x, ['female', 'f'])
+const isMale = (x) => compareSex(x, ['male', 'm'])
 
 const  buildAncestors = (sample, ancestorKeys) => {
     let ancestors = new Set(ancestorKeys.map(k => sample[k])
@@ -21,13 +27,13 @@ const findMates = (data, level) => {
     data = data.filter( d => d.id );
     console.log(data);
 
-    let femaleSamples = data.filter( a => a.sex === VARIABLES.female )
+    let femaleSamples = data.filter( a => isFemale(a.sex) )
         .map(a => buildAncestors(a, level.ancestorKeys))
         .sort(sortSample);
     console.log('No. females.' + femaleSamples.length);
     console.log(femaleSamples)
 
-    let maleSamples = data.filter( a => a.sex === VARIABLES.male )
+    let maleSamples = data.filter( a => isMale(a.sex) )
         .map(a => buildAncestors(a, level.ancestorKeys))
         .sort(sortSample);
     console.log('No. males.' + maleSamples.length);
