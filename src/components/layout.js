@@ -13,6 +13,7 @@ import {withPrefix} from 'gatsby'
 import "./layout.css"
 
 import logo from "../images/logo.svg"
+import { appVersion } from "../utils";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -64,7 +65,8 @@ const Layout = ({ children }) => {
         </main>
         <footer style={{marginTop: "20px", textAlign: "center"}}>
           © {new Date().getFullYear() + 543} CodeForThailand,
-          Developed by <a href="http://pat.chormai.org">Pattarawat</a> & <a href="https://th-th.facebook.com/PoultryResearchAndDevelopmentCenter/">Theerachai Chormai</a>
+          Developed by <a href="http://pat.chormai.org">Pattarawat</a> & <a href="https://th-th.facebook.com/PoultryResearchAndDevelopmentCenter/">Theerachai Chormai</a> <br/>
+          version {appVersion}
         </footer>
       </div>
     </>
