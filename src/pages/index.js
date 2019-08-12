@@ -56,13 +56,9 @@ const IndexPage = () => {
     <SEO title="Home" />
     <div style={{paddingBottom: "20px", marginBottom: "20px", borderBottom: "1px solid black"}}>
       <div style={{fontWeight: "bold"}}>
-        {/* <label for="file" style={{padding: "5px", border: "2px solid", cursor: "pointer"}}>
-          Browse a CSV file
-        </label> */}
         <input id="file" type="file"
           onChange={fileSelected}
           accept="text/csv"
-          // style={{visibility: "hidden"}}
         />
       </div>
     </div>
