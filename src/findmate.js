@@ -6,7 +6,7 @@ const VARIABLES = {
 
 const  buildAncestors = (sample, ancestorKeys) => {
     let ancestors = new Set(ancestorKeys.map(k => sample[k])
-        .filter(a => a != VARIABLES.na && a));
+        .filter(a => a !== VARIABLES.na && a));
     return {
         id: sample.id,
         ancestors: ancestors
@@ -21,13 +21,13 @@ const findMates = (data, level) => {
     data = data.filter( d => d.id );
     console.log(data);
 
-    let femaleSamples = data.filter( a => a.sex == VARIABLES.female )
+    let femaleSamples = data.filter( a => a.sex === VARIABLES.female )
         .map(a => buildAncestors(a, level.ancestorKeys))
         .sort(sortSample);
     console.log('No. females.' + femaleSamples.length);
     console.log(femaleSamples)
 
-    let maleSamples = data.filter( a => a.sex == VARIABLES.male )
+    let maleSamples = data.filter( a => a.sex === VARIABLES.male )
         .map(a => buildAncestors(a, level.ancestorKeys))
         .sort(sortSample);
     console.log('No. males.' + maleSamples.length);
