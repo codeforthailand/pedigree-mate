@@ -2,7 +2,7 @@
   "name": "pedigree-mate",
   "private": true,
   "description": "...",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Pattarawat & Theerachai Chormai",
   "dependencies": {
     "gatsby": "^2.13.50",
