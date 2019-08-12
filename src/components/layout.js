@@ -54,7 +54,7 @@ const Layout = ({ children }) => {
           </h1>
           <div style={{float: "right", fontWeight: "bold", marginTop: "1rem"}}>
             <span style={{marginRight: `10px`}}>
-              <Link to="/manual">Manual</Link>
+              <Link to="/manual/">Manual</Link>
             </span>
             <span><a href={withPrefix(`/pedigree-test.csv`)}>Sample CSV File</a></span>
           </div>
